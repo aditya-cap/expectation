@@ -1,0 +1,136 @@
+{
+    "_id" : "587ca7c838c61527f4cf87f4",
+    "ObjectId" : "11661334",
+    "ObjectType" : "Product",
+    "Action" : "Updated",
+    "CreatedAt" : "2017-01-16T04:27:19.000-06:30",
+    "Message" : "Product - 11661334 is Updated",
+    "OperatorId" : "00000000-0000-0000-0000-000000000000",
+    "SourceApplication" : "",
+    "MerchantId" : "1790d5c5-1d0b-410f-897d-213b148c5980",
+    "ClientIP" : "",
+    "ZoneId" : "EC2INDIA_DB1",
+    "Arguments" : null,
+    "DataBusArguments" : [ 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165080",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165082",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165084",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165086",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165088",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165110",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165090",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165092",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165094",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165096",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165098",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165100",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165102",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165104",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165106",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165108",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }
+    ],
+    "IsUpdateRefineSearch" : true,
+    "IsMysqlRfsIndexUpdated" : false,
+    "InvokesPriceEngine" : true,
+    "IsVanishPurged" : false,
+    "IsSearchIndexUpdated" : false,
+    "IsRfsIndexUpdated" : false,
+    "IsPriceCalculated" : false,
+    "IsPurgeOnlyRSShowcase" : false
+}

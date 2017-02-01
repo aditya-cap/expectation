@@ -1,0 +1,19 @@
+{
+    "_id" : "58758cb4ce60ce6e8147b42c",
+    "ObjectId" : "58758cb4f2aaf9ed088b9509",
+    "ObjectType" : 0,
+    "EventType" : "12",
+    "CommunicationType" : 1,
+    "Args" : {
+        "CreditsConsumed" : "1",
+        "ReferenceId" : "1290515097"
+    },
+    "Message" : "Dear User, One Time Password for your COD transaction on http://www.biba.in is 4537. Please use this OTP to confirm the Order.",
+    "MessageTo" : "919051262421",
+    "InsertDateAndTime" : "2017-01-10T19:09:00.345-06:30",
+    "MerchantId" : "6c57599f-2c43-4c82-806a-e07c3410f5d3",
+    "EventStatus" : "OK:1290515097",
+    "Exception" : "",
+    "ExceptionType" : 3,
+    "Receiver" : 0
+}

@@ -1,0 +1,19 @@
+{
+    "_id" : "58758c00ce60ce6e8147b40d",
+    "ObjectId" : "5076940",
+    "ObjectType" : 1,
+    "EventType" : "UltraC",
+    "CommunicationType" : 0,
+    "Args" : {
+        "OrderStatus" : "A",
+        "ZoneId" : "India Standard Time"
+    },
+    "Message" : "",
+    "MessageTo" : "vnraju.1979@gmail.com",
+    "InsertDateAndTime" : "2017-01-10T19:05:43.632-06:30",
+    "MerchantId" : "827b177a-1eb2-468a-8f46-d934f87f2ac2",
+    "EventStatus" : "S",
+    "Exception" : "",
+    "ExceptionType" : 3,
+    "Receiver" : 0
+}

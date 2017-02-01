@@ -1,0 +1,45 @@
+{
+    "_id" : "587ca7be38c61527f4cf87b8",
+    "ObjectId" : "11661334",
+    "ObjectType" : "Product",
+    "Action" : "Updated",
+    "CreatedAt" : "2017-01-16T04:27:12.000-06:30",
+    "Message" : "Product - 11661334 is Updated",
+    "OperatorId" : "00000000-0000-0000-0000-000000000000",
+    "SourceApplication" : "",
+    "MerchantId" : "1790d5c5-1d0b-410f-897d-213b148c5980",
+    "ClientIP" : "",
+    "ZoneId" : "EC2INDIA_DB1",
+    "Arguments" : null,
+    "DataBusArguments" : [ 
+        {
+            "TN" : "tblproducts",
+            "RI" : "11661334",
+            "CN" : "Availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165076",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }, 
+        {
+            "TN" : "tblProductVariants",
+            "RI" : "8165078",
+            "CN" : "availability",
+            "OV" : "0",
+            "NV" : "1"
+        }
+    ],
+    "IsUpdateRefineSearch" : true,
+    "IsMysqlRfsIndexUpdated" : true,
+    "InvokesPriceEngine" : true,
+    "IsVanishPurged" : true,
+    "IsSearchIndexUpdated" : true,
+    "IsRfsIndexUpdated" : true,
+    "IsPriceCalculated" : true,
+    "IsPurgeOnlyRSShowcase" : false
+}
