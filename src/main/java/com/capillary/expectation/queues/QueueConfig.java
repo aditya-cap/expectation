@@ -31,7 +31,7 @@ public class QueueConfig {
 
     private static final Logger logger = LoggerFactory.getLogger(QueueConfig.class);
 
-    final static String eventQueue = "all-events";
+    public final static String eventQueue = "all-events";
 
     @PostConstruct
     private void init() {

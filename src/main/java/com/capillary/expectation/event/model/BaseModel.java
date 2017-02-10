@@ -39,6 +39,10 @@ public abstract class BaseModel<T> {
         return (String) valueMap.get("MerchantId");
     }
 
+    public String getStatus() {
+        return (String) valueMap.get("status");
+    }
+
     public Map<String, Object> getValueMap() {
         return valueMap;
     }

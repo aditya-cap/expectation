@@ -2,7 +2,7 @@
     "_id" : "58378de038c6152b7c6a6c72",
     "ObjectId" : "4906865",
     "ObjectType" : "Order",
-    "Action" : "pos_updated",
+    "Action" : "Updated",
     "CreatedAt" : "2016-11-24T18:26:29.000-06:30",
     "Message" : "Order - 4906865 is Inserted",
     "OperatorId" : "00000000-0000-0000-0000-000000000000",

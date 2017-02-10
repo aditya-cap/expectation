@@ -26,7 +26,7 @@ public class EventPublisher {
     private RabbitTemplate rabbitTemplate;
 
     public void send(Object message) throws Exception {
-        logger.info("sending message: {}", message);
+        logger.info("sending message");
         rabbitTemplate.convertAndSend(QueueConfig.eventQueue, message);
     }
 

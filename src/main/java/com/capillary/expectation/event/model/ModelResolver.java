@@ -13,6 +13,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
+import com.capillary.expectation.util.ExpectationUtils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -42,7 +43,7 @@ public class ModelResolver {
     public BaseModel resolveModel(Object eventData) {
         Map<String, Object> eventDataMap;
         if (eventData instanceof String) {
-            eventDataMap = getJsonAsMap((String) eventData);
+            eventDataMap = ExpectationUtils.getJsonAsMap((String) eventData);
         } else {
             throw new RuntimeException("GOD ONLY KNOWS WHAT THIS IS");
         }
@@ -63,13 +64,13 @@ public class ModelResolver {
             orderModel.getValueMap().putAll(eventDataMap);
 
             List<Map<String, Object>> arguments = (List) eventDataMap.get("DataBusArguments");
-            String status = (String) (arguments
+            /*String status = (String) (arguments
                     .stream()
                     .filter((e) -> "OrderStatus".equals(((Map) e).get("CN")))
                     .map((e) -> e.get("NV"))
                     .findFirst()
-                    .get());
-            orderModel.getValueMap().put("status", status);
+                    .get());*/
+            orderModel.getValueMap().put("status", eventDataMap.get("Action"));
             return orderModel;
         } else if (clazz.equals(ProductModel.class)) {
             ProductModel model = new ProductModel(Long.parseLong(objectIdStr));
@@ -90,18 +91,5 @@ public class ModelResolver {
         }
 
         return null;
-    }
-
-    private Map<String, Object> getJsonAsMap(String json) {
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            TypeReference<Map<String, Object>> typeRef = new TypeReference<Map<String, Object>>() {
-            };
-            HashMap<String, Object> result = mapper.readValue(json, typeRef);
-
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException("Couldnt parse json:" + json, e);
-        }
     }
 }

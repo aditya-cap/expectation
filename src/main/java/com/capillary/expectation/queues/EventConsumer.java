@@ -14,6 +14,7 @@ import com.capillary.expectation.event.EvaluationContext;
 import com.capillary.expectation.event.model.BaseModel;
 import com.capillary.expectation.event.model.ModelResolver;
 import com.capillary.expectation.rule.impl.RuleEngine;
+import com.capillary.expectation.state.StateMachine;
 
 @Component
 public class EventConsumer {
@@ -26,6 +27,10 @@ public class EventConsumer {
 
     @Autowired
     private RuleEngine ruleEngine;
+    
+    @Autowired
+    private StateMachine stateMachine;
+
 
     @PostConstruct
     private void init() {
@@ -40,7 +45,8 @@ public class EventConsumer {
         try {
             resolveModel = modelResolver.resolveModel(message);
             EvaluationContext evaluationContext = new EvaluationContext(new Date(), message, resolveModel);
-            ruleEngine.evaluateRulesOnEvent(evaluationContext);
+            //ruleEngine.evaluateRulesOnEvent(evaluationContext);
+            stateMachine.processInput(evaluationContext);
             logger.info("completed processing event");
         } catch (Exception e) {
             logger.warn("could not process message: " + message, e);

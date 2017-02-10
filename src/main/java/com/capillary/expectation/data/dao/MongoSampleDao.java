@@ -5,14 +5,16 @@
  * Created By aditya
  * Created On 01-Feb-2017
  */
-package com.capillary.expectation.data.mongo;
+package com.capillary.expectation.data.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
-public class MongoBaseDao {
+import com.capillary.expectation.data.mongo.MongoDataSourceManager;
+
+@Service
+public class MongoSampleDao {
 
     @Autowired
     private MongoDataSourceManager mongoDataSourceManager;

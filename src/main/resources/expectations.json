@@ -1,0 +1,23 @@
+[
+	{
+		"tenantId": "a5fce14e-9865-4855-b585-8339e7a60fec",
+		"id": "123",
+		"initialState": {
+			"entity": "Order",
+			"status": "received"
+		},
+		"finalState": {
+			"entity": "Order",
+			"status": "pos_updated"
+		},
+		"expectedTimeInSeconds": 30,
+		"failureActions": [
+			{
+				"actionName": "saveToMongoAction",
+				"toEmailIds": "",
+				"subject": "Boohoo {{OrderId}}",
+				"body": "Boohoo {{OrderId}}"
+			}
+		]
+	}
+]

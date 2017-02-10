@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.capillary.expectation.data.mongo.MongoBaseDao;
+import com.capillary.expectation.data.dao.MongoSampleDao;
 import com.capillary.expectation.event.EvaluationContext;
 import com.capillary.expectation.rule.api.Action;
 import com.capillary.expectation.rule.api.Operand;
@@ -36,7 +36,7 @@ public class RuleEngine {
     private static final Logger logger = LoggerFactory.getLogger(RuleEngine.class);
     
     @Autowired
-    private MongoBaseDao baseDao;
+    private MongoSampleDao baseDao;
 
     private List<Rule> ruleList = new ArrayList<>();
 

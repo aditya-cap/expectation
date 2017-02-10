@@ -10,6 +10,7 @@ package com.capillary.expectation.rule.impl.action;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.capillary.expectation.data.entity.ExpectationDataEntity;
 import com.capillary.expectation.event.EvaluationContext;
 import com.capillary.expectation.rule.api.Action;
 
@@ -24,6 +25,11 @@ public class LoggingAction implements Action {
     @Override
     public void execute(EvaluationContext context) {
         logger.info("all hail! the event has executed: {}", context);
+    }
+
+    @Override
+    public void execute(ExpectationDataEntity context) {
+        logger.info("failed expectation: {}", context);
     }
 
 }

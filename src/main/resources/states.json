@@ -1,0 +1,40 @@
+{
+	"GLOBAL": {
+		"transitions": [
+			{
+				"initialState": {
+					"entity": "null",
+					"status": "null"
+				},
+				"finalState": {
+					"entity": "Order",
+					"status": "received"
+				},
+				"event": {
+					"entityModified": "Order",
+					"modification": "Inserted"
+				}
+			},
+			{
+				"initialState": {
+					"entity": "null",
+					"status": "null"
+				},
+				"finalState": {
+					"entity": "Order",
+					"status": "pos_updated"
+				},
+				"event": {
+					"entityModified": "Order",
+					"modification": "Updated"
+				}
+			}
+		]
+	},
+	"1790d5c5-1d0b-410f-897d-213b148c5980": {
+		
+	},
+	"a5fce14e-9865-4855-b585-8339e7a60fec": {
+		
+	}
+}
